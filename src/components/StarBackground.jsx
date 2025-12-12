@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 export const StarBackground = () => {
     const [stars, setStars] = useState([]);
-    const [meteors, setMeteors] = useState([]);
+    //const [meteors, setMeteors] = useState([]);
 
     useEffect(() => {
         const generateStars = () => {
@@ -26,7 +26,7 @@ export const StarBackground = () => {
         generateStars();
     }, []);
 
-    useEffect(() => {
+    /*useEffect(() => {
         const generateMeteors = () => {
             const numberOfMeteors = 10;
             const newMeteors = [];
@@ -46,7 +46,7 @@ export const StarBackground = () => {
         };
 
         generateMeteors();
-    }, []);
+    }, []);*/
 
     return (
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
@@ -61,21 +61,6 @@ export const StarBackground = () => {
                         top: `${star.y}%`,
                         opacity: star.opacity,
                         animationDuration: `${star.animationDuration}s`,
-                    }}
-                />
-            ))}
-
-            {meteors.map((meteor) => (
-                <div
-                    key={meteor.id}
-                    className="meteor animate-meteor"
-                    style={{
-                        width: `${meteor.size * 50}px`, // remove multiplication for hw for falling stars
-                        height: `${meteor.size * 2}px`,
-                        left: `${meteor.x}%`,
-                        top: `${meteor.y}%`,
-                        animationDelay: `${meteor.delay}s`,
-                        animationDuration: `${meteor.animationDuration}s`,
                     }}
                 />
             ))}
