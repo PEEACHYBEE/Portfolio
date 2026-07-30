@@ -10,8 +10,8 @@ export const AboutSection = () => {
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibond">Passionate Web Developer and Tech Creator</h3>
                         <p className="text-muted-foreground">
-                            Studying in Saint Louis University - Baguio City helped me develop
-                            a strong knowledge in computers. 
+                            A Cum Laude graduate of BS Information Technology from Saint Louis University - Baguio City, 
+                            Philippines helped me develop a strong knowledge in computers. 
                         </p>
                         <p className="text-muted-foreground">
                             With over 4 years of experience in web development, programming, 
@@ -23,54 +23,22 @@ export const AboutSection = () => {
                             <a href="#contact" className="cosmic-button"> 
                                 Get in touch
                             </a>
-                            <a href={`${import.meta.env.BASE_URL}Encarnacion Resume.pdf`} target="_blank" rel="noopener noreferrer"  className="px-6 py-2 rounded-full border border-primary tect-primary hover:bg-primary/10 transition-colors duration-300"> 
+                            <a href={`${import.meta.env.BASE_URL}Resume.pdf`} target="_blank" rel="noopener noreferrer"  className="px-6 py-2 rounded-full border border-primary tect-primary hover:bg-primary/10 transition-colors duration-300"> 
                                 View Resume
                             </a>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 gap-6">
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <Code className="h-6 w-6 text-primary"/>
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Web Development</h4>
-                                    <p className="text-muted-foreground">
-                                        Creating responsive websites and web applications with 
-                                        frameworks
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <User className="h-6 w-6 text-primary"/>
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                                    <p className="text-muted-foreground">
-                                        Designing intuitive user interface and seamless user
-                                        experiences for web and mobile applications
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <Lightbulb className="h-6 w-6 text-primary"/> 
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Problem Solving</h4>
-                                    <p className="text-muted-foreground">
-                                        Diagnosing issues, optimizing performance, and ensuring smooth user experiences
-                                    </p>
-                                </div>
-                            </div>
+                    <div>
+                        <div className="relative">
+                            <div className="absolute inset-0 bg-primary rounded-full opacity-20 animate-pulse [animation-duration:5s]"></div>
+                            <img 
+                                src="/public/logo.png" 
+                                alt="Profile" 
+                                className="relative rounded-full border-2 border-white shadow-lg"
+                            />
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
