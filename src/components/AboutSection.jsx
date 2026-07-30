@@ -11,7 +11,7 @@ export const AboutSection = () => {
                         <div className="relative">
                             <div className="absolute inset-0 bg-primary rounded-full opacity-20 animate-pulse [animation-duration:5s]"></div>
                             <img 
-                                src="/public/Freskkie.png" 
+                                src="/Freskkie.png" 
                                 alt="Profile" 
                                 className="relative rounded-full border-2 border-primary shadow-lg"
                             />
