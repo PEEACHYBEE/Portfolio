@@ -7,6 +7,16 @@ export const AboutSection = () => {
                     About <span className="text-primary"> Me</span>
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div className="relative">
+                            <div className="absolute inset-0 bg-primary rounded-full opacity-20 animate-pulse [animation-duration:5s]"></div>
+                            <img 
+                                src="/public/Freskkie.png" 
+                                alt="Profile" 
+                                className="relative rounded-full border-2 border-primary shadow-lg"
+                            />
+                        </div>
+                    </div>
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibond">Passionate Web Developer and Tech Creator</h3>
                         <p className="text-muted-foreground">
@@ -28,16 +38,7 @@ export const AboutSection = () => {
                             </a>
                         </div>
                     </div>
-                    <div>
-                        <div className="relative">
-                            <div className="absolute inset-0 bg-primary rounded-full opacity-20 animate-pulse [animation-duration:5s]"></div>
-                            <img 
-                                src="/public/logo.png" 
-                                alt="Profile" 
-                                className="relative rounded-full border-2 border-white shadow-lg"
-                            />
-                        </div>
-                    </div>
+                    
                     
                 </div>
             </div>
