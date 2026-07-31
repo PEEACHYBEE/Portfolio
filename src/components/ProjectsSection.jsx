@@ -1,9 +1,18 @@
 import { ExternalLink, Figma, Github, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const projects = [
     {
-        id: 1,
-        title: "DENR-CAR UI Design",
+        id: 14,
+        title: "CW Hardware POS System",
+        description: "A private project made for the CW Hardware to automate their point-of-sale processes.",
+        imageUrl: `${import.meta.env.BASE_URL}projects/cwUI.png`,
+        tags: ["React", "PHP", "ExpressJS", "MySQL"],
+        demoUrl: "#",
+    },
+    {
+        id: 13,
+        title: "Cordimap",
         description: "A capstone project made for the Department of Environment and Natural Resources - Cordillera Administrative Region (DENR-CAR) to redesign their current website.",
         imageUrl: `${import.meta.env.BASE_URL}projects/capstoneUI.png`,
         tags: ["React", "Tailwind CSS"],
@@ -11,7 +20,7 @@ const projects = [
         icons: [ExternalLink, Github],
     },
     {
-        id: 2,
+        id: 12,
         title: "Terramap",
         description: "A capstone project made for the Department of Environment and Natural Resources - Cordillera Administrative Region (DENR-CAR) to view the statistical land cover changes overtime.",
         imageUrl: `${import.meta.env.BASE_URL}projects/terramapUI.png`,
@@ -20,7 +29,7 @@ const projects = [
         icons: [ExternalLink],
     },
     {
-        id: 3,
+        id: 11,
         title: "Terramap (Admin)",
         description: "A capstone project made for the Department of Environment and Natural Resources - Cordillera Administrative Region (DENR-CAR) to monitor the events in Terramap.",
         imageUrl: `${import.meta.env.BASE_URL}projects/terramapAdminUI.png`,
@@ -29,7 +38,7 @@ const projects = [
         icons: [ExternalLink],
     },
     {
-        id: 4,
+        id: 10,
         title: "My Study Pal",
         description: "In partial requirement of our IT Certification Review (ITE30) project, our team developed a UI design for a study application called My Study Pal. This app aims to help students stay concentrated and motivated while studying by providing features such as quizes, focus timers, and progress tracking.",
         imageUrl: `${import.meta.env.BASE_URL}projects/mystudypalUI.png`,
@@ -38,7 +47,7 @@ const projects = [
         icons: [Figma],
     },
     {
-        id: 5,
+        id: 9,
         title: "Guidance Hub UI Design",
         description: "In partial requirement of our System Integration and Architecture (IT324) project, our team developed a UI for our proponent, Guidance Office. The UI is part of a system designed to help identify students who are at risk of failing, as well as professorts who have not yet submitted grades.",
         imageUrl: `${import.meta.env.BASE_URL}projects/guidancehubUI.png`,
@@ -48,7 +57,7 @@ const projects = [
         icons: [Figma],
     },
     {
-        id: 6,
+        id: 8,
         title: "SDG Website",
         description: "In partial requirement of our Web Technologies (IT312) project, team KOTL developed a web site made with HTML and CSS for promoting UNESCO Sustainable Development Goal 14: Life Below Water and Goal 15: Life On Land. This UI shows the different problems, goals, projects, and innovations for both SDGs.",
         imageUrl: `${import.meta.env.BASE_URL}projects/sdgUI.png`,
@@ -68,7 +77,7 @@ const projects = [
         icons: [Figma, Github],
     },
     {
-        id: 8,
+        id: 6,
         title: "Alumania Alumni ",
         description: "In partial requirement of our Web Technologies (IT312) project, team KOTL developed a web site made with HTML and CSS for promoting UNESCO Sustainable Development Goal 14: Life Below Water and Goal 15: Life On Land. This UI shows the different problems, goals, projects, and innovations for both SDGs.",
         imageUrl: `${import.meta.env.BASE_URL}projects/alumaniaalumniUI.png`,
@@ -78,7 +87,7 @@ const projects = [
         icons: [Figma, Github],
     },
     {
-        id: 9,
+        id: 5,
         title: "SM UI Design",
         description: "In partial requirement of our Software Engineering (IT313) project, our team developed a UI for an automated billing system designed to enhance the Sio Mai Supermall's stall rental operations. With the help of this UI, the billing department will benefit from a streamlined and automated system that facilitated invoice creation and payment verification.",
         imageUrl: `${import.meta.env.BASE_URL}projects/smUI.png`,
@@ -88,7 +97,7 @@ const projects = [
         icons: [Figma],
     },
     {
-        id: 10,
+        id: 4,
         title: "Malayah UI Design",
         description: "In partial requirement of our Technoprenuership (IT315) project, our team developed a mobile UI and AI application that is catered for people who needs someone to talk. With Malayah, they can easily talk to someone who listens without judgement, providing a safe and anonymous space for expressing their thoughts and emotions.",
         imageUrl: `${import.meta.env.BASE_URL}projects/malayahUI.png`,
@@ -98,7 +107,7 @@ const projects = [
         icons: [Figma],
     },
     {
-        id: 11,
+        id: 3,
         title: "Galleria Mobile UI Design",
         description: "In partial requirement of our Technology-Assisted Presentation and Communication (CS315) project, our team developed a mobile version UI for the Galleria website.",
         imageUrl: `${import.meta.env.BASE_URL}projects/galleriamobileUI.png`,
@@ -108,7 +117,7 @@ const projects = [
         icons: [Figma],
     },
     {
-        id: 12,
+        id: 2,
         title: "Galleria UI Design",
         description: "In partial requirement of our Technology-Assisted Presentation and Communication (CS315) project, our team developed a UI to support local and independent artist to upload, showcase, and sell thri digital artowkrs. Users can also download these works or purchase them.",
         imageUrl: `${import.meta.env.BASE_URL}projects/galleriaUI.png`,
@@ -118,7 +127,7 @@ const projects = [
         icons: [Figma],
     },
     {
-        id: 13,
+        id: 1,
         title: "Plug N' Go UI Design",
         description: "In partial requirement of our Requirements Analysis and Modeling (IT211) project, our team developed a mobile UI for our proponent. We determined their system requirements that will help their business and enhance their operational efficiency. The UI focuses on tracking electric vehicles (EV) details and detecting nearest charging ports to provide users with a convenient charging experience.",
         imageUrl: `${import.meta.env.BASE_URL}projects/plugngoUI.png`,
@@ -131,7 +140,7 @@ const projects = [
 
 export const ProjectsSection = () => {
     return (
-    <section id="projects" className="py-24 px-4 relative">
+        <section id="projects" className="py-24 px-4 relative">
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                     Featured<span className="text-primary"> Projects</span>
@@ -146,9 +155,9 @@ export const ProjectsSection = () => {
                     {projects.map((project, key) => (
                         <div key={key} className="group bg-card rounded-lg shadow-xs overflow-hidden card-hover flex flex-col">
                             <div className="h-48 overflow-hidden">
-                                <img 
-                                    src={project.imageUrl} 
-                                    alt={project.title} 
+                                <img
+                                    src={project.imageUrl}
+                                    alt={project.title}
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 />
                             </div>
@@ -164,20 +173,27 @@ export const ProjectsSection = () => {
                                 <p className="text-muted-foreground text-sm text-left">{project.description}</p>
                                 <div className="mt-auto flex justify-start items-center pt-4">
                                     <div className="flex space-x-3">
-                                        {project.icons.map((Icon, index) => {
-                                            const link = Icon === Github ? project.githubUrl : project.demoUrl;
-                                            return (
-                                                <a 
-                                                    key={index} 
-                                                    href={link} 
-                                                    className="text-foreground/80 hover:text-primary transition-colors duration-300" 
-                                                    target="_blank" 
-                                                    rel="noopener noreferrer"
-                                                >
-                                                    <Icon size={20} />
-                                                </a>
-                                            );
-                                        })}
+                                        {project.icons?.length > 0 && (
+                                            <div className="mt-auto flex justify-start items-center pt-4">
+                                                <div className="flex space-x-3">
+                                                    {project.icons.map((Icon, index) => {
+                                                        const link = Icon === Github ? project.githubUrl : project.demoUrl;
+
+                                                        return (
+                                                            <a
+                                                                key={index}
+                                                                href={link}
+                                                                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                            >
+                                                                <Icon size={20} />
+                                                            </a>
+                                                        );
+                                                    })}
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </div>

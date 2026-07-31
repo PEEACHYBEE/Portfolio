@@ -18,7 +18,7 @@ export const AboutSection = () => {
                         </div>
                     </div>
                     <div className="space-y-6">
-                        <h3 className="text-2xl font-semibond">Passionate Web Developer and Tech Creator</h3>
+                        <h3 className="text-2xl font-semibond">Crafting Modern Web Experiences</h3>
                         <p className="text-muted-foreground">
                             A Cum Laude graduate of BS Information Technology from Saint Louis University - Baguio City, 
                             Philippines helped me develop a strong knowledge in computers. 
